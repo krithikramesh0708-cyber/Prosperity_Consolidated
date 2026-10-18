@@ -217,3 +217,11 @@ __marimo__/
 backtests/
 .DS_Store
 local_data_backup/
+
+# === Prosperity Repo Exclusions ===
+backtests/
+imc-prosperity-3/
+timo-prosperity-3/
+local_data_backup/
+*.log
+uv.lock

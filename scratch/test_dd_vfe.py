@@ -1,0 +1,90 @@
+import subprocess
+import os
+import re
+
+template = """import json
+import math
+from datamodel import OrderDepth, TradingState, Order
+from typing import Dict, List, Tuple
+
+LIMITS = {'VELVETFRUIT_EXTRACT': 200, 'HYDROGEL_PACK': 200}
+STRIKES = ['VEV_4000', 'VEV_4500', 'VEV_5000', 'VEV_5100', 'VEV_5200', 'VEV_5300', 'VEV_5400', 'VEV_5500', 'VEV_6000', 'VEV_6500']
+for v in STRIKES: LIMITS[v] = 300
+
+class Trader:
+    def run(self, state: TradingState) -> Tuple[Dict[str, List[Order]], int, str]:
+        d = json.loads(state.traderData) if state.traderData else {}
+        result = {}
+        
+        books = {}
+        for p, od in state.order_depths.items():
+            b, a = sorted(od.buy_orders.items(), reverse=True), sorted(od.sell_orders.items())
+            if b and a: books[p] = {'bid': b[0][0], 'ask': a[0][0], 'mid': (b[0][0]+a[0][0])/2.0, 'bids': b, 'asks': a}
+
+        # Precalculate VFE trend
+        vfe_diff = 0.0
+        vfe = 'VELVETFRUIT_EXTRACT'
+        if vfe in books:
+            hk = f'{vfe}_h'
+            d[f'{hk}_tmp'] = d.get(hk, []) + [books[vfe]['mid']]
+            if len(d[f'{hk}_tmp']) > 50:
+                tmp = d[f'{hk}_tmp'][-50:]
+                ema = sum(tmp)/len(tmp)
+                vfe_diff = books[vfe]['mid'] - ema
+
+        for p in state.order_depths:
+            pos = state.position.get(p, 0)
+            limit = LIMITS.get(p, 300)
+            orders = []
+
+            if p in books:
+                hist_key = f'{p}_h'
+                if hist_key not in d: d[hist_key] = []
+                d[hist_key].append(books[p]['mid'])
+                
+                win = 75 if p in STRIKES else 50
+                if len(d[hist_key]) > win: d[hist_key].pop(0)
+                
+                ema = sum(d[hist_key])/len(d[hist_key])
+                
+                if p in STRIKES:
+                    # Apply VFE trend filter
+                    trending_up = vfe_diff > 1.5
+                    trending_down = vfe_diff < -1.5
+
+                    for ap, av in books[p]['asks']:
+                        # Don't buy call options if VFE is trending down!
+                        if ap <= ema - 6.0 and pos < limit and not trending_down:
+                            q = min(-av, limit - pos)
+                            orders.append(Order(p, ap, q))
+                            pos += q
+                    for bp, bv in books[p]['bids']:
+                        # Don't sell call options if VFE is trending up!
+                        if bp >= ema + 6.0 and pos > -limit and not trending_up:
+                            q = min(bv, limit + pos)
+                            orders.append(Order(p, bp, -q))
+                            pos -= q
+                else:
+                    norm_pos = pos / limit
+                    skew = -6.0 * (norm_pos)**3 
+                    f = ema + skew
+                    b, s = int(math.floor(f - 1)), int(math.ceil(f + 1))
+                    b, s = min(b, books[p]['bid'] + 1), max(s, books[p]['ask'] - 1)
+                    if limit - pos > 0: orders.append(Order(p, b, limit - pos))
+                    if limit + pos > 0: orders.append(Order(p, s, -(limit + pos)))
+
+            result[p] = orders
+        return result, 0, json.dumps(d)
+"""
+
+with open("trader_dd_test.py", "w") as f:
+    f.write(template)
+
+res = subprocess.run("python3 -m prosperity4bt trader_dd_test.py 3", env=os.environ, shell=True, text=True, capture_output=True)
+match = re.search(r"final_pnl:\s*(-?\d+(?:,\d+)*)[\s\S]*?max_drawdown_abs:\s*(-?\d+(?:,\d+)*)", res.stdout)
+if match:
+    pnl = int(match.group(1).replace(",", ""))
+    dd = int(match.group(2).replace(",", ""))
+    print(f"PnL: {pnl}, Drawdown: {dd}")
+else:
+    print(res.stdout)

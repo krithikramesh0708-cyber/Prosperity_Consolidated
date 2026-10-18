@@ -48,6 +48,10 @@ class BackTester:
     def __load_algorithm(self) -> Any:
         try:
             sys.path.append(str(self.options.algorithm_path.parent))
+
+            from prosperity4bt import datamodel
+            sys.modules["datamodel"] = datamodel
+
             trader_module = import_module(self.options.algorithm_path.stem)
         except ModuleNotFoundError as e:
             print(f"{self.options.algorithm_path} is not a valid algorithm file: {e}")

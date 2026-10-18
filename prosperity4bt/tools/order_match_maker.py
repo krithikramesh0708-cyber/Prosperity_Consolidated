@@ -1,3 +1,4 @@
+from typing import Optional
 from prosperity4bt.datamodel import TradingState, Order, Symbol, Trade
 from prosperity4bt.models.input import BacktestData, MarketTrade
 from prosperity4bt.models.output import TradeRow
@@ -207,7 +208,7 @@ class OrderMatchMaker:
         self,
         order: Order,
         market_trades: list[MarketTrade],
-        leftover_best_bid: int | None,
+        leftover_best_bid: Optional[int],
     ) -> list[Trade]:
         """
         Server-like buy interception:
@@ -256,7 +257,7 @@ class OrderMatchMaker:
         self,
         order: Order,
         market_trades: list[MarketTrade],
-        leftover_best_ask: int | None,
+        leftover_best_ask: Optional[int],
     ) -> list[Trade]:
         """
         Server-like sell interception:

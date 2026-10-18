@@ -1,0 +1,2038 @@
+Temuto
+—
+Yesterday at 10:36 PM
+user@fedora ~/b/i/ROUND_3> rust_backtester --trader trader.py --dataset datasets/ trader: trader.py dataset: datasets mode: fast artifacts: log-only SET DAY TICKS OWN_TRADES FINAL_PNL RUN_DIR D=0 0 10000 315 19465.00 runs/backtest-1777086049110-datasets-day-0 D+1 1 10000 374 26405.00 runs/backtest-1777086049110-datasets-day+1 D+2 2 10000 323 23457.00 runs/backtest-1777086049110-datasets-day+2 TOTAL - 30000 1012 69327.00 - PRODUCT D=0 D+1 D+2 TOTAL HYDROGEL_PACK 9875.00 13053.00 8199.00 31127.00 VELVETFRUIT_EXTRACT 7209.00 10276.50 7812.00 25297.50 VEV_4000 1102.00 1320.00 550.00 2972.00 VEV_4500 0.00 0.00 0.00 0.00 VEV_5000 0.00 0.00 0.00 0.00 VEV_5100 542.00 644.00 1400.00 2586.00 VEV_5200 676.00 665.50 -844.00 497.50 VEV_5300 61.00 446.00 6340.00 6847.00 VEV_5400 0.00 0.00 0.00 0.00 VEV_5500 0.00 0.00 0.00 0.00 VEV_6000 0.00 0.00 0.00 0.00 VEV_6500 0.00 0.00 0.00 0.00 user@fedora ~/b/i/ROUND_3>
+Mochi [THM], 
+—
+Yesterday at 10:36 PM
+on the website
+Mr. Nobody [HoNR], 
+—
+Yesterday at 10:36 PM
+
+Stoic
+—
+Yesterday at 10:36 PM
+share alpha
+Dosa [KING], 
+—
+Yesterday at 10:36 PM
+SON, I love overfitting
+
+Temuto
+—
+Yesterday at 10:37 PM
+bro im at 1k on the website wdym share alpha 
+Stoic
+—
+Yesterday at 10:37 PM
+ohh sorry
+ [KING], 
+Jeff
+—
+Yesterday at 10:37 PM
+ill give u 10 bucks for that
+ [KING], 
+Andreas
+—
+Yesterday at 10:37 PM
+Ur profile made me wince
+bhav
+—
+Yesterday at 10:37 PM
+sorry is crazy 
+Lachy-Dauth
+—
+Yesterday at 10:37 PM
+buy low sell high
+Stoic
+—
+Yesterday at 10:37 PM
+mm is the strat guys
+ug17_
+—
+Yesterday at 10:37 PM
+bro actually help us
+Lachy-Dauth
+—
+Yesterday at 10:38 PM
+I've got no clue either
+Stoic
+—
+Yesterday at 10:38 PM
+market make bros
+ug17_
+—
+Yesterday at 10:38 PM
+what's your pnl rn?
+@Lachy-Dauth
+max
+—
+Yesterday at 10:38 PM
+yo its over
+Temuto
+—
+Yesterday at 10:39 PM
+its so over
+Stoic
+—
+Yesterday at 10:39 PM
+we are cooked
+s3551
+—
+Yesterday at 10:40 PM
+real
+Dosa [KING], 
+—
+Yesterday at 10:40 PM
+kinda
+Lazarus Mission
+—
+Yesterday at 10:40 PM
+yall got more time left than what has passed
+you got this!
+ [KING], 
+stephanie23
+—
+Yesterday at 10:41 PM
+this an actual algo or overfit to perfect trades?
+bhav
+—
+Yesterday at 10:41 PM
+switch to codex 5.5
+Dosa [KING], 
+—
+Yesterday at 10:41 PM
+overfit
+Iso
+—
+Yesterday at 10:41 PM
+finally made a breakthrough for hydrogel
+
+Stoic
+—
+Yesterday at 10:41 PM
+share alpha
+BossCrusher667
+—
+Yesterday at 10:41 PM
+is this hydro only?
+IGSL
+—
+Yesterday at 10:42 PM
+what is the theoritcal limit for algo trade, can anyone tell me around where
+goldfish_ez
+—
+Yesterday at 10:42 PM
+ngl looks pretty similar to my overfit graph 
+BossCrusher667
+—
+Yesterday at 10:42 PM
+154k
+max
+—
+Yesterday at 10:42 PM
+y'all if you go negative 6 digits the - sign disappears, is that counted as profit or nah
+Stoic
+—
+Yesterday at 10:42 PM
+above 25k
+Stoic
+—
+Yesterday at 10:42 PM
+try to go further
+IGSL
+—
+Yesterday at 10:43 PM
+you mean in the website log or 3 days
+Lazarus Mission
+—
+Yesterday at 10:43 PM
+thats not the hidden alpha IMC was talking about 
+Stoic
+—
+Yesterday at 10:43 PM
+website log
+stephanie23
+—
+Yesterday at 10:43 PM
+theres no negative sign so im pretty sure its profit
+Mr. Nobody [HoNR], 
+—
+Yesterday at 10:44 PM
+a 5-stack team would definitely have a tremendous amount of advantage in Phase 2
+Lazarus Mission
+—
+Yesterday at 10:44 PM
+pnloverflow.com
+Vedik
+—
+Yesterday at 10:44 PM
+geniunely just do the exact opposite of what you're doing rn
+stephanie23
+—
+Yesterday at 10:44 PM
+cant win on the spread
+max
+—
+Yesterday at 10:45 PM
+it's like a circle
+if you go far enough negative it goes back to positive
+Iso
+—
+Yesterday at 10:45 PM
+yeah
+Iso
+—
+Yesterday at 10:45 PM
+damn
+stephanie23
+—
+Yesterday at 10:45 PM
+pretty sure thats how it works
+Temuto
+—
+Yesterday at 10:45 PM
+are you using smile ?
+s3551
+—
+Yesterday at 10:45 PM
+ain no way that's not overfit (I am not coping at all)
+Sonic
+—
+Yesterday at 10:45 PM
+dont have time to actually push on r3 this week so dropping this in case someone can use it VEV bot flow signal is gated on voucher book state. t stat decays hard when 5200 and 5300 spreads widen past 2 ticks. informed bot only fires when it can hedge into a tight surface, makes sense mechanically condition on both 5200 spread at or below 2 and 5300 spread at or below 2 at the same time, per event edge roughly doubles, way fewer false fires. n drops but the signal is cleaner free alpha, gl
+Iso
+—
+Yesterday at 10:46 PM
+smile? for hydrogel how?
+Temuto
+—
+Yesterday at 10:46 PM
+nah i was asking you
+Stoic
+—
+Yesterday at 10:46 PM
+why
+BossCrusher667
+—
+Yesterday at 10:47 PM
+ts lowk what i did
+delete ts
+rn
+bhav
+—
+Yesterday at 10:47 PM
+fr pls
+ruslan
+—
+Yesterday at 10:47 PM
+I love you bro
+max
+—
+Yesterday at 10:47 PM
+delete it so only we get it pls
+max
+—
+Yesterday at 10:47 PM
+I'm like 200k in the red I need it man
+BossCrusher667
+—
+Yesterday at 10:49 PM
+@Sonic bro
+
+delete
+igor_silva
+—
+Yesterday at 10:49 PM
+Gang is 63 k hard to get ?
+Aphrim
+—
+Yesterday at 10:50 PM
+No
+Jeff
+—
+Yesterday at 10:50 PM
+Yes
+Stoic
+—
+Yesterday at 10:50 PM
+no
+igor_silva
+—
+Yesterday at 10:50 PM
+then whats a very good pnl
+s3551
+—
+Yesterday at 10:50 PM
+2 billion
+Ethan
+—
+Yesterday at 10:50 PM
+300k is decent at this point
+Temuto
+—
+Yesterday at 10:50 PM
+vro vhat
+Stoic
+—
+Yesterday at 10:51 PM
+154k
+BossCrusher667
+—
+Yesterday at 10:51 PM
+wdym
+Temuto
+—
+Yesterday at 10:51 PM
+delete what
+stephanie23
+—
+Yesterday at 10:51 PM
+already deleted
+BossCrusher667
+—
+Yesterday at 10:51 PM
+his free alpha
+Temuto
+—
+Yesterday at 10:51 PM
+where?
+coubeh
+—
+Yesterday at 10:51 PM
+ormuz
+BossCrusher667
+—
+Yesterday at 10:51 PM
+like 10 messages up bro
+cyberkraft23
+—
+Yesterday at 10:52 PM
+Can someone please help me with hydro
+I've been stuck at 5.5k
+Ethan
+—
+Yesterday at 10:52 PM
+mean reversion
+Ethan
+—
+Yesterday at 10:52 PM
+overfit
+cyberkraft23
+—
+Yesterday at 10:52 PM
+I was doing that only to get 5.5k Earlier MM was giving 1k
+ruslan
+—
+Yesterday at 10:53 PM
+just ran his free alphaand got +40k more
+A.R.I.A.APP
+—
+Yesterday at 10:53 PM
+bosscrusher667 has been warned
+Reason: Bad word usage
+BossCrusher667
+—
+Yesterday at 10:53 PM
+SHOOT
+Alex
+—
+Yesterday at 10:53 PM
+alr i got hydro to 9.5k
+Stoic
+—
+Yesterday at 10:54 PM
+get it to 20k bro
+Alex
+—
+Yesterday at 10:54 PM
+gang the 20k one is overfit theres just no shot
+Ethan
+—
+Yesterday at 10:54 PM
+bhav
+—
+Yesterday at 10:54 PM
+did u guys have to modify the bt to get it work too?
+Aphrim
+—
+Yesterday at 10:54 PM
+hey guys im a poor white boy please let me win I need the 25k to buy a corvette
+
+Stoic
+—
+Yesterday at 10:54 PM
+use claude code u will win for sure
+Aphrim
+—
+Yesterday at 10:55 PM
+no im too poor for claude
+Stoic
+—
+Yesterday at 10:55 PM
+use the free codex
+Aphrim
+—
+Yesterday at 10:55 PM
+ok thanks
+Lachy-Dauth
+—
+Yesterday at 10:55 PM
+I am struggling to break the 150k barrier does anyone have any advice
+
+Suzanne.
+—
+Yesterday at 10:55 PM
+yo 可以把程序发给我嘛
+bhav
+—
+Yesterday at 10:56 PM
+have u tried buying lower?
+Stoic
+—
+Yesterday at 10:56 PM
+hardcode more numbers
+Aphrim
+—
+Yesterday at 10:56 PM
+I would reccomend not losing money
+Lachy-Dauth
+—
+Yesterday at 10:56 PM
+No I hadn't thank you so much
+bhav
+—
+Yesterday at 10:56 PM
+anytime
+Lachy-Dauth
+—
+Yesterday at 10:56 PM
+Is it just buying lower or should I sell higher as well
+Ethan
+—
+Yesterday at 10:56 PM
+try the smile
+Stoic
+—
+Yesterday at 10:56 PM
+do both
+stephanie23
+—
+Yesterday at 10:57 PM
+pretty sure u cant sell higher so just buy even loewr
+Suzanne.
+—
+Yesterday at 10:57 PM
+yo drop the program ma
+yoitspeter
+—
+Yesterday at 10:57 PM
+iv frown >>
+Aphrim
+—
+Yesterday at 10:57 PM
+what does intravenous injection have to do with this stuff?
+A.R.I.A.APP
+—
+Yesterday at 10:57 PM
+tyrone1182 has been warned
+Reason: Bad word usage
+Stoic
+—
+Yesterday at 10:58 PM
+to make a smile
+Sonic
+—
+Yesterday at 10:58 PM
+just dm I'll send code idc
+Jeff
+—
+Yesterday at 10:58 PM
+yeah me too bro
+Ribu
+—
+Yesterday at 10:58 PM
+"options" has been the biggest scam
+Iso
+—
+Yesterday at 10:58 PM
+genuinely what!!!!!!!
+Ribu
+—
+Yesterday at 10:58 PM
+mfw its leverage
+max
+—
+Yesterday at 10:59 PM
+is this an open offer?
+Temuto
+—
+Yesterday at 10:59 PM
+dmed
+amandaw
+—
+Yesterday at 11:00 PM
+sonic pls help
+YoBoi
+—
+Yesterday at 11:00 PM
+dm'd too please send
+Jeff
+—
+Yesterday at 11:00 PM
+Aphrim
+—
+Yesterday at 11:00 PM
+I tried it but im only getting 30k on the site
+Temuto
+—
+Yesterday at 11:01 PM
+codex is the strat?
+Stoic
+—
+Yesterday at 11:01 PM
+yes
+Temuto
+—
+Yesterday at 11:01 PM
+throught it was kimik2
+addyy_m13
+—
+Yesterday at 11:01 PM
+claude opus 4.7
+ruslan
+—
+Yesterday at 11:01 PM
+used codex to implement sonic's alpha and im thriving rn
+Stoic
+—
+Yesterday at 11:01 PM
+why do u want more
+BossCrusher667
+—
+Yesterday at 11:01 PM
+sonic ur an opp bro
+
+i spent 10 hours getting ts
+ruslan
+—
+Yesterday at 11:01 PM
+W sonic
+igor_silva
+—
+Yesterday at 11:01 PM
+@Stoic what pnl are u getting
+Stoic
+—
+Yesterday at 11:01 PM
+13k
+Stoic
+—
+Yesterday at 10:58 PM
+to make a smile
+Sonic
+—
+Yesterday at 10:58 PM
+just dm I'll send code idc
+Jeff
+—
+Yesterday at 10:58 PM
+yeah me too bro
+Ribu
+—
+Yesterday at 10:58 PM
+"options" has been the biggest scam
+Iso
+—
+Yesterday at 10:58 PM
+genuinely what!!!!!!!
+Ribu
+—
+Yesterday at 10:58 PM
+mfw its leverage
+max
+—
+Yesterday at 10:59 PM
+is this an open offer?
+Temuto
+—
+Yesterday at 10:59 PM
+dmed
+amandaw
+—
+Yesterday at 11:00 PM
+sonic pls help
+YoBoi
+—
+Yesterday at 11:00 PM
+dm'd too please send
+Jeff
+—
+Yesterday at 11:00 PM
+Aphrim
+—
+Yesterday at 11:00 PM
+I tried it but im only getting 30k on the site
+Temuto
+—
+Yesterday at 11:01 PM
+codex is the strat?
+Stoic
+—
+Yesterday at 11:01 PM
+yes
+Temuto
+—
+Yesterday at 11:01 PM
+throught it was kimik2
+addyy_m13
+—
+Yesterday at 11:01 PM
+claude opus 4.7
+ruslan
+—
+Yesterday at 11:01 PM
+used codex to implement sonic's alpha and im thriving rn
+Stoic
+—
+Yesterday at 11:01 PM
+why do u want more
+BossCrusher667
+—
+Yesterday at 11:01 PM
+sonic ur an opp bro
+
+i spent 10 hours getting ts
+ruslan
+—
+Yesterday at 11:01 PM
+W sonic
+igor_silva
+—
+Yesterday at 11:01 PM
+@Stoic what pnl are u getting
+Stoic
+—
+Yesterday at 11:01 PM
+13k
+shraman
+—
+Yesterday at 11:01 PM
+whats the max so far someone got
+igor_silva
+—
+Yesterday at 11:02 PM
+overall ?
+Stoic
+—
+Yesterday at 11:02 PM
+30k
+Aphrim
+—
+Yesterday at 11:02 PM
+is 30k good score? All I did was ask it to make me a trading algorithim and make as much money as possible
+Iso
+—
+Yesterday at 11:02 PM
+yo somebody got 150k
+Temuto
+—
+Yesterday at 11:02 PM
+bro is codex free?
+Aphrim
+—
+Yesterday at 11:02 PM
+thats what im saying
+Iso
+—
+Yesterday at 11:02 PM
+.
+how
+like thats insane
+guys making more than a mil
+Haiduc Dorel
+—
+Yesterday at 11:02 PM
+ask it to make more money
+shraman
+—
+Yesterday at 11:03 PM
+did he had a ss of 150k
+Aphrim
+—
+Yesterday at 11:03 PM
+I treid and it made less
+April ⬅️ not a guy
+—
+Yesterday at 11:03 PM
+sup twih
+Sami
+—
+Yesterday at 11:03 PM
+wow
+sama
+—
+Yesterday at 11:03 PM
+so once you model the overal volatility with a smile, it appears that it doesnt capture it greatly at all, i am assuming we need another method to model it?
+Stoic
+—
+Yesterday at 11:04 PM
+yes you are in the top
+igor_silva
+—
+Yesterday at 11:04 PM
+@Sonic bro i have dmed you
+Aphrim
+—
+Yesterday at 11:04 PM
+oh ok thanks it just seems like people here are getting 150k
+im new to trading and coding
+so idk this stuff
+other than trying options a year ago and losing money
+s3551
+—
+Yesterday at 11:05 PM
+real
+Stoic
+—
+Yesterday at 11:05 PM
+guys use codex
+it is the alpha
+s3551
+—
+Yesterday at 11:06 PM
+real
+Jeff
+—
+Yesterday at 11:06 PM
+@Lachy-Dauth i need up fill up my car do u reccomend chevron?
+iawa
+—
+Yesterday at 11:10 PM
+the 150k is not real. its DP approach to oracle trade all products on first 1k ticks, it's as overfit as you can get.
+Sami
+—
+Yesterday at 11:10 PM
+what is good pnl for 10k
+YoBoi
+—
+Yesterday at 11:10 PM
+did he send?
+iawa
+—
+Yesterday at 11:11 PM
+if you try it yourself you can find that oracle trading caps at 155k pnl.
+Aphrim
+—
+Yesterday at 11:11 PM
+oh
+iawa
+—
+Yesterday at 11:11 PM
+im not certain... but consider this. P( alpha being real to make 150k | literally oracle trading all products on 1k ticks gives 155k) < 0.01
+Aphrim
+—
+Yesterday at 11:11 PM
+how do I know my model isn't overfit?
+ChummyBigfoot86 [MIKU], 
+—
+Yesterday at 11:11 PM
+Whats a good benchmark PNL for options?
+Ethan
+—
+Yesterday at 11:11 PM
+what is an option?
+ChummyBigfoot86 [MIKU], 
+—
+Yesterday at 11:11 PM
+a choice you can make
+iawa
+—
+Yesterday at 11:12 PM
+a good method, is to not look at day 2 at all, like dont touch it. every analysis u do ignore it. use it as held out validation. optimize on days 0 and 1, then test on day 2. don't even look at day 2 until ur ready to submit
+either that or calibrate a MC backtester in the next 24hrs lmao
+Ribu
+—
+Yesterday at 11:12 PM
+@iawa
+what do you think about Sonic saying all that?
+Aphrim
+—
+Yesterday at 11:12 PM
+Oh yeah that makes sense thank you
+Jeff
+—
+Yesterday at 11:12 PM
+what would u say is like max not overfitted
+iawa
+—
+Yesterday at 11:13 PM
+saying all what?
+iawa
+—
+Yesterday at 11:13 PM
+i genuinely have no idea how to avoid overfitting in this round
+you have to be intelligent with what parametsr you use
+sama
+—
+Yesterday at 11:13 PM
+@iawa thanks for the insight
+ruslan
+—
+Yesterday at 11:13 PM
+just claude or codex the alpha, sitting at 105k rn and I don't think im fully done
+sama
+—
+Yesterday at 11:13 PM
+how did you determine the 155k oracle though
+igor_silva
+—
+Yesterday at 11:13 PM
+can you please let us know whats the pnl you are getting in website?
+Jeff
+—
+Yesterday at 11:13 PM
+yeah me too
+YoBoi
+—
+Yesterday at 11:14 PM
+I tried antigravity aint working
+bhav
+—
+Yesterday at 11:14 PM
+try mythos its doing p well got to 120k
+Ribu
+—
+Yesterday at 11:14 PM
+@iawa
+iawa
+—
+Yesterday at 11:14 PM
+A good idea, would be, say your model has 10 parameters, to take a grid search in that 10d space, and find the areas with the highest pnl gradient. Then hopefully you find like a global max in ur parameter space. iteratively refine ur grid search so that in hyperparameter space, deviations of all your 10 hyperparmaters are not causing massive pnl drift
+Ribu
+—
+Yesterday at 11:15 PM
+basically do parsimonious searches, and find good regions of parameters
+use the average of those params
+Sreeram M A
+—
+Yesterday at 11:15 PM
+what's the max people are making in hydrogel on the website?
+Ribu
+—
+Yesterday at 11:15 PM
+usually more stable
+ruslan
+—
+Yesterday at 11:15 PM
+w troll
+iawa
+—
+Yesterday at 11:15 PM
+you can do some easy 2d visualizations with heatmaps, but the best would be to take gradient of ur pnl in x dimensions if ur model has x parameters, through finite differencing, and find global maximum and check for stability ]
+Ribu
+—
+Yesterday at 11:15 PM
+bro istg sonic's trolling
+igor_silva
+—
+Yesterday at 11:15 PM
+@Sreeram M A how much are u making
+Mr. Nobody [HoNR], 
+—
+Yesterday at 11:16 PM
+Why is an option
+YoBoi
+—
+Yesterday at 11:16 PM
+yea fr sad
+Ribu
+—
+Yesterday at 11:16 PM
+wym fr sad
+iawa
+—
+Yesterday at 11:16 PM
+for context i think decent backtest results are 300k, like thats probably like a good starting point
+Ribu
+—
+Yesterday at 11:16 PM
+use the dome
+i am getting 414k backtest
+YOU WANT REAL ALPHA?
+iawa
+—
+Yesterday at 11:16 PM
+i think max on backtest is anyway from 300k to 800k
+Stoic
+—
+Yesterday at 11:16 PM
+share alpha guys
+Milo
+—
+Yesterday at 11:16 PM
+100k per day or 300k per day?
+TROLLLLLLLLLLLLL
+—
+Yesterday at 11:17 PM
+dm please
+igor_silva
+—
+Yesterday at 11:18 PM
+hey bro what are u getting in webiste if u dont mind sharing
+Knight [HYPE], 
+—
+Yesterday at 11:18 PM
+@Mr. Nobody whats ur product wise pnl split?
+Dosa [KING], 
+—
+Yesterday at 11:20 PM
+PUSHED MORE in overfitting
+iawa
+—
+Yesterday at 11:30 PM
+anywhere from 10k to 25k if i had to guess
+maybe even 40k
+but its very high variance the products have huge volatility
+Jeff
+—
+Yesterday at 11:31 PM
+i got 73k with hardcoding iawa am i cookwd
+iawa
+—
+Yesterday at 11:31 PM
+probably 
+Ribu
+—
+Yesterday at 11:31 PM
+why are people even hardcoding DP smhmh
+iawa
+—
+Yesterday at 11:31 PM
+Ribu
+—
+Yesterday at 11:31 PM
+like do they think it will actually work
+igor_silva
+—
+Yesterday at 11:31 PM
+thats it !!! these people made me think 100k is only good
+iawa
+—
+Yesterday at 11:31 PM
+to make ppl panic
+TunaInPoland
+—
+Yesterday at 11:31 PM
+does anyone have the yt links for aria uplink round 1 and 2?
+Andreas
+—
+Yesterday at 11:32 PM
+Lachy vibe coded discord bots to demotivate people
+Mr. Nobody [HoNR], 
+—
+Yesterday at 11:32 PM
+https://youtu.be/dQw4w9WgXcQ
+YouTube
+Rick Astley
+Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)
+
+Wtf
+Fail 
+ [HoNR], 
+TunaInPoland
+—
+Yesterday at 11:33 PM
+embed
+Mr. Nobody [HoNR], 
+—
+Yesterday at 11:33 PM
+How do I remove it in mobile
+TunaInPoland
+—
+Yesterday at 11:33 PM
+epic fail
+Mr. Nobody [HoNR], 
+—
+Yesterday at 11:33 PM
+Lol
+TunaInPoland
+—
+Yesterday at 11:33 PM
+idk mr Nobody
+TunaInPoland
+—
+Yesterday at 11:33 PM
+dynamic programming?
+Firefly
+—
+Yesterday at 11:34 PM
+Does the portal tests on a part of the final "holdout set" or not
+iawa
+—
+Yesterday at 11:34 PM
+the real alpha is psychological warfare. i was going crazy w my team tryna figure it out
+Ribu
+—
+Yesterday at 11:38 PM
+mfw i casually drop actual alpha and not bs
+Guru
+—
+Yesterday at 11:38 PM
+which bcktster?
+Ribu
+—
+Yesterday at 11:38 PM
+delete ts
+@rmtf1111
+rmtf1111
+—
+Yesterday at 11:38 PM
+this is not alpha brother
+but sure
+TunaInPoland
+—
+Yesterday at 11:38 PM
+im the real alpha
+jane street
+s3551
+—
+Yesterday at 11:39 PM
+this is the best I've gotten
+
+therefore it's the best possible without overfitting
+but yeah I have no idea if I should be taking the 20k on hydrogel alone people seriously lol
+marvinthang [OCPC], 
+—
+Yesterday at 11:40 PM
+how much u got for hydrogel
+s3551
+—
+Yesterday at 11:41 PM
+like 7k lol
+bhav
+—
+Yesterday at 11:41 PM
+>4k vev is possible w/o overfit ill say that much
+s3551
+—
+Yesterday at 11:41 PM
+I'm definitely not at the top but I just don't know if there's an extra 13k I can squeeze out of here lol
+s3551
+—
+Yesterday at 11:41 PM
+I'm at about 4.1k
+how much above 4k have you gotten?
+Alex
+—
+Yesterday at 11:41 PM
+i got 10k vfe not sure if its overfit or not
+it does decent on backtest for other three days
+Haiduc Dorel
+—
+Yesterday at 11:42 PM
+yea idk how i feel about 2 days/round in these cirumstances
+hereiamwhy
+—
+Yesterday at 11:42 PM
+What are u doing for hydrogel rn
+s3551
+—
+Yesterday at 11:43 PM
+oh is it?
+Haiduc Dorel
+—
+Yesterday at 11:43 PM
+yup, 29 hours left
+Lazarus Mission
+—
+Yesterday at 11:43 PM
+2 days are not enough... Im hella tired rn
+s3551
+—
+Yesterday at 11:43 PM
+treating it as mean reverting
+and doing mm
+with some extra stuff
+marvinthang [OCPC], 
+—
+Yesterday at 11:44 PM
+did u fix fair
+s3551
+—
+Yesterday at 11:44 PM
+wdym
+igor_silva
+—
+Yesterday at 11:44 PM
+anyone above 40k without overfit
+s3551
+—
+Yesterday at 11:44 PM
+like fixed at 10k?
+nah
+igor_silva
+—
+Yesterday at 11:44 PM
+????
+s3551
+—
+Yesterday at 11:44 PM
+I think it's like osmium right?
+opainhammer
+—
+Yesterday at 11:44 PM
+how much?
+godspeed
+—
+Yesterday at 11:44 PM
+what is the max on hydrogel?
+marvinthang [OCPC], 
+—
+Yesterday at 11:45 PM
+fixed fair at 10000 produces best pnl on my backtest but it doesnt work when i submit, but change to another almost halves my pnl in backtest
+Caster
+—
+Yesterday at 11:47 PM
+what are people getting on IMC for VFE
+ [OCPC], 
+s3551
+—
+Yesterday at 11:47 PM
+what are your numbers for backtest and web?
+Caster
+—
+Yesterday at 11:47 PM
+is 4k bad
+oscar
+—
+Yesterday at 11:47 PM
+how r people getting 154k on equirag
+marvinthang [OCPC], 
+—
+Yesterday at 11:48 PM
+~60k backtest and 1k web without fixed fair
+ [OCPC], 
+s3551
+—
+Yesterday at 11:48 PM
+1k total?
+or just hydro
+either way, there's 100% a way to not fix fair and get way better numbers than that
+marvinthang
+marvinthang [OCPC], 
+—
+Yesterday at 11:45 PM
+fixed fair at 10000 produces best pnl on my backtest but it doesnt work when i submit, but change to another almost halves my pnl in backtest
+Caster
+—
+Yesterday at 11:47 PM
+what are people getting on IMC for VFE
+ [OCPC], 
+s3551
+—
+Yesterday at 11:47 PM
+what are your numbers for backtest and web?
+Caster
+—
+Yesterday at 11:47 PM
+is 4k bad
+oscar
+—
+Yesterday at 11:47 PM
+how r people getting 154k on equirag
+marvinthang [OCPC], 
+—
+Yesterday at 11:48 PM
+~60k backtest and 1k web without fixed fair
+ [OCPC], 
+s3551
+—
+Yesterday at 11:48 PM
+1k total?
+or just hydro
+either way, there's 100% a way to not fix fair and get way better numbers than that
+marvinthang [OCPC], 
+—
+Yesterday at 11:48 PM
+just hydro
+s3551
+—
+Yesterday at 11:48 PM
+ic
+yeah I'd keep working at it a bit
+marvinthang [OCPC], 
+—
+Yesterday at 11:50 PM
+but it still create huge drawdown right
+ [OCPC], 
+stephanie23
+—
+Yesterday at 11:50 PM
+this is overfit
+marvinthang [OCPC], 
+—
+Yesterday at 11:51 PM
+underfit
+ [OCPC], 
+s3551
+—
+Yesterday at 11:51 PM
+I think I get like -1.5k at some point yeah
+but still it works overall 
+my drawdown is huge in general
+Caster
+—
+Yesterday at 11:51 PM
+OU
+hhc [OAI], 
+—
+Yesterday at 11:54 PM
+i sometimes just need a HPC to do this searching
+
+rd3
+—
+Yesterday at 11:54 PM
+whats a hpc
+integoverq
+—
+Yesterday at 11:54 PM
+is this OU process,you sure
+Rsk123
+—
+Yesterday at 11:54 PM
+is sell max and hold the strat for hydrogel
+ [OAI], 
+integoverq
+—
+Yesterday at 11:55 PM
+lmao
+hhc [OAI], 
+—
+Yesterday at 11:55 PM
+high performance computer
+Caster
+—
+Yesterday at 11:56 PM
+whats an OU process
+Rama
+—
+Yesterday at 11:56 PM
+what are yall getting on imc with just hydrogel
+Aphrim
+—
+Yesterday at 11:56 PM
+
+marvinthang [OCPC], 
+—
+Yesterday at 11:57 PM
+what about ur backtest
+stephanie23
+—
+12:01 AM
+
+its all -1 lol whys this happening
+tsushi_roll [ODDS], 
+—
+12:01 AM
+0 pnl
+Congrats
+No wiz
+Consistent -1 pnl
+a3d1m
+—
+12:01 AM
+what is good scores for hydrogel, both in imc backtester and others
+Aphrim
+—
+12:01 AM
+1 billion pnl the 0s got truncated
+tsushi_roll [ODDS], 
+—
+12:01 AM
+at least it’s robust
+Ribu
+—
+12:02 AM
+Guys here's the best parameter tuning prompt: Identify all the parameters in my trading model. I want you to first understand their role. We want to do two things: sensitivity test, and stress test. Create MCPC for stress test for each sens candidiate. For sens, bucket continuous ranges, for discrete arbitrarily start with some economically meaningful ones. Do a parsimonious grid search with 1 hold on the dataset. Then pick a stable region of parameters, do a bayesian model averaging with any mean that produces highest pnl on those parameters.
+stephanie23
+—
+12:02 AM
+but like if its all -1 why is it still jumping everywhere
+Ribu
+—
+12:02 AM
+your welcome
+tsushi_roll [ODDS], 
+—
+12:02 AM
+Also
+ [OCPC], 
+s3551
+—
+12:02 AM
+
+tsushi_roll [ODDS], 
+—
+12:02 AM
+What are the strategies for finding signals
+Like yea do EDA ask ChatGPT
+but like idk the direction for looking for em
+Quantum [MaOJ], 
+—
+12:02 AM
+tte for round3 is 7 days ??
+Rsk123
+—
+12:04 AM
+Guys any advice for hydrogel only. highkey kinda lost
+
+Temuto
+—
+12:04 AM
+how are you getting those numbers my backtest is stuck at around 70k total pnl
+hallwaybug
+—
+12:04 AM
+is this mean reversion
+Faduzzle
+—
+12:05 AM
+what are you guys using for T for black scholes?
+Aphrim
+—
+12:05 AM
+see how you lost money at 69k? You don't want to do that
+alan [CMBC], 
+—
+12:05 AM
+i'm still trying to make a positive pnl on hydogel 
+Ribu
+—
+12:05 AM
+wait wait
+
+a3d1m
+—
+12:06 AM
+why crop is that ur current bt results
+hallwaybug
+—
+12:06 AM
+but if you optimize drawdown, you lose final pnl
+Ribu
+—
+12:06 AM
+yes
+A.R.I.A.APP
+—
+12:06 AM
+s3551 has been warned
+Reason: Spam
+Ribu
+—
+12:06 AM
+the other side had info about the strategy
+Rsk123
+—
+12:06 AM
+Inventory-skewed market maker that passively rides trends through fill accumulation and clips positions on mean-reversion signals.
+ So like mean-reversion and trend-follwing. Kinda lost so resorting to ai now
+Ribu
+—
+12:06 AM
+short title i gave it
+s3551
+—
+12:06 AM
+which part. like hydrogel, velvet, etc.
+vroom
+—
+12:06 AM
+1,000,000 timestamps in a day
+
+Rsk123
+—
+12:06 AM
+bet
+Ribu
+—
+12:06 AM
+@Faduzzle
+hallwaybug
+—
+12:06 AM
+yeah this strategy is cooked.
+Ribu
+—
+12:06 AM
+do NOT use BS
+this round is not BS
+Rsk123
+—
+12:07 AM
+@Aphrim do you have any advice kinda hit a deadend, maybe I can dm lol
+a3d1m
+—
+12:07 AM
+what are good scores for options and hydrogel
+imc bt wisw
+tsushi_roll [ODDS], 
+—
+12:07 AM
+Not bad actually
+vroom
+—
+12:07 AM
+still need bs to solve for iv no?
+alan [CMBC], 
+—
+12:07 AM
+yo does rust backtester work properly?
+gaurang
+—
+12:07 AM
+IS GETTING THAT 100K ACTUALLY POSSIBLE WITHOUT DIRECTLY OVERFITING BECAUSE THE ONLINE TEST DATA IS EXACTLY TYHERE IN DAY 2 SO ITS VERY EASY TO OVERFIT
+Aphrim
+—
+12:07 AM
+I just used AI and told it to make me a trading algo
+and told it to use mean reversion
+gaurang
+—
+12:08 AM
+WHAT S THE SCORE GETTING GENUINELY
+hallwaybug
+—
+12:08 AM
+i would be happy to help, but I am stuck as well
+Temuto
+—
+12:08 AM
+hydrogel
+hereiamwhy
+—
+12:08 AM
+What did u get with this
+ [CMBC], 
+alan [CMBC], 
+—
+12:08 AM
+am i crazy or are its values way off
+like it'll give me a positive pnl
+and then website will give me negative
+hallwaybug
+—
+12:08 AM
+its not that simple im sure
+Faduzzle
+—
+12:08 AM
+right but are you doing 8/256 to annualize?
+Rsk123
+—
+12:08 AM
+oh okay and what's your pnl
+Aphrim
+—
+12:09 AM
+
+
+
+bunnybrain
+—
+12:09 AM
+guys can you help me out am struck at 3k pnl
+Aphrim
+—
+12:09 AM
+im at about 30k overall
+Amrutanshu Dash
+—
+12:09 AM
+im stuck at 1.5k
+Aphrim
+—
+12:09 AM
+just tell the AI to make a profit
+Faduzzle
+—
+12:10 AM
+in all seriousness, take a prompt engineering course
+Aphrim
+—
+12:10 AM
+
+Aphrim
+—
+12:11 AM
+this is my first time vibecoding
+alan [CMBC], 
+—
+12:11 AM
+you forgot the most important part smh
+yea "no mistakes" lmao
+Kellen
+—
+12:11 AM
+on the full or 10%?
+alan [CMBC], 
+—
+12:11 AM
+get claude to prompt a prompt for you
+Aphrim
+—
+12:12 AM
+10%. I was at 650k on full
+alan [CMBC], 
+—
+12:12 AM
+
+vroom
+—
+12:12 AM
+no i used 365 based off of the frankfurt hedgehogs
+hallwaybug
+—
+12:12 AM
+Imma try ts... I'm tired of being systematic with AI
+April ⬅️ not a guy
+—
+12:12 AM
+bro
+you are not real son
+https://github.com/TimoDiehm/imc-prosperity-3/tree/main#round-3-options-scalping
+GitHub
+GitHub - TimoDiehm/imc-prosperity-3: Preparing for Prosperity 4? Th...
+Preparing for Prosperity 4? This repo won’t help you win, but it will help you understand why you didn’t. Clone it now and start failing faster! - TimoDiehm/imc-prosperity-3
+
+Faduzzle
+—
+12:12 AM
+rook e1 my goat
+April ⬅️ not a guy
+—
+12:13 AM
+im making so many goated gifs from this
+
+Faduzzle
+—
+12:13 AM
+pls give me better tips
+Aphrim
+—
+12:13 AM
+
+alan [CMBC], 
+—
+12:13 AM
+slightly relieved im not on there
+Faduzzle
+—
+12:13 AM
+no offense but the three tips are absolute dogwater
+April ⬅️ not a guy
+—
+12:13 AM
+SEVEN MINUTS HAHAHAH
+ [CMBC], 
+April ⬅️ not a guy
+—
+12:13 AM
+these are literally from like the last day
+alan [CMBC], 
+—
+12:13 AM
+"you are a jane street quant who makes no mistakes"
+Faduzzle
+—
+12:14 AM
+nevermind this guy should get 300k prompt eng role
+alan [CMBC], 
+—
+12:14 AM
+
+Aphrim
+—
+12:14 AM
+guyys im litterally giving you the prompts that got me to 30k pnl
+and yall hating
+Faduzzle
+—
+12:14 AM
+at the rate he's learning he'll vibe code mythos
+Ribu
+—
+12:14 AM
+yo its over
+aphrim
+pls
+alan [CMBC], 
+—
+12:14 AM
+"Claude opus, find a way to release mythos and give me sole control over it (no mistakes)"
+April ⬅️ not a guy
+—
+12:14 AM
+
+Ribu
+—
+12:14 AM
+help me
+I NEED HELP
+Aphrim
+—
+12:15 AM
+bro this is my first time vibecoding im an EE major at a shitty barely T100 uni pls
+ [CMBC], 
+ABHI
+—
+12:15 AM
+Waitt, does it actually works?? Like if we give a better and detailed prompt, does it works better?? I mean yeah it should , but is the difference that significant??
+April ⬅️ not a guy
+—
+12:15 AM
+
+Aphrim
+—
+12:15 AM
+no just tell the AI to make more money
+hallwaybug
+—
+12:15 AM
+how is that ai working for 7m 40s with that prompt 
+alan [CMBC], 
+—
+12:15 AM
+it gets paid by the hour
+ace [snek], 
+—
+12:15 AM
+this is why you’re not #1 twin
+Faduzzle
+—
+12:15 AM
+burning tokens
+Aphrim
+—
+12:15 AM
+My latest prompt it took like 40 minutes
+ [CMBC], 
+stephanie23
+—
+12:15 AM
+
+Faduzzle
+—
+12:15 AM
+turn it off thinking mode
+ [snek], 
+April ⬅️ not a guy
+—
+12:16 AM
+
+ace [snek], 
+—
+12:16 AM
+this is why you’re not top 100
+Faduzzle
+—
+12:16 AM
+for what you're doing you don't need complex model
+complex model is for brainstorming/coming up with suggestings
+ [snek], 
+April ⬅️ not a guy
+—
+12:16 AM
+
+Faduzzle
+—
+12:16 AM
+which the reg model does okay
+Aphrim
+—
+12:16 AM
+ill pay for the tokens after I win the 25k
+ace [snek], 
+—
+12:17 AM
+this is why you’re not top 1k
+ [snek], 
+April ⬅️ not a guy
+—
+12:17 AM
+
+Ribu
+—
+12:17 AM
+wow
+@April ⬅️ not a guy
+ace [snek], 
+—
+12:17 AM
+this is why you’re not even qualified for the leaderboard
+Ribu
+—
+12:17 AM
+ily
+u the best troll here
+ [snek], 
+April ⬅️ not a guy
+—
+12:17 AM
+woah
+April ⬅️ not a guy
+—
+12:17 AM
+im not even a troll
+ace [snek], 
+—
+12:17 AM
+Aphrim
+—
+12:18 AM
+bro this shit isn't gonna finish I want to sleep
+
+Iso
+—
+12:18 AM
+bro i genuinely have no clue how people are doing above 70k
+Ribu
+—
+12:18 AM
+subsidized compute going to ts btw ^
+April ⬅️ not a guy
+—
+12:18 AM
+son
+alan [CMBC], 
+—
+12:19 AM
+maybe you arent connected to wifi 
+Ribu
+—
+12:19 AM
+its thinking bro
+let it think
+ace [snek], 
+—
+12:19 AM
+“you may see fit” ik what kind of person you are
+ [CMBC], 
+Aphrim
+—
+12:19 AM
+oh lemme check that thanks
+Give me a job
+—
+12:19 AM
+Everyone should study how option prices are determined theoretically
+ [snek], 
+Aphrim
+—
+12:19 AM
+? huh explain
+hallwaybug
+—
+12:19 AM
+vibecoded your way with those funny ash prompts to 30k . Give yourself a pat on the back
+alan [CMBC], 
+—
+12:19 AM
+ayooooo its you again
+ace [snek], 
+—
+12:19 AM
+“gpt win imc make no mistakes”
+Aphrim
+—
+12:20 AM
+yes because if you make the AI laugh it will work harder
+tryiangle
+—
+12:20 AM
+what is good backtester benchmark
+Aphrim
+—
+12:20 AM
+codex please make me a backtester
+hallwaybug
+—
+12:20 AM
+thats the alpha
+Ribu
+—
+12:20 AM
+i need alpha
+pls
+Aphrim
+—
+12:20 AM
+whats alph
+alpha
+alan [CMBC], 
+—
+12:20 AM
+go all in on speed
+Im so stuck cant seem to generate PNL at all
+alan [CMBC], 
+—
+12:22 AM
+ngl kinda relatable
+SsamJang
+—
+12:22 AM
+for the visualizer website, is the top 1 15.4K or 154K+?
+ghost
+—
+12:22 AM
+People are implementing B-S models here it will never work Black Scoholes are for highly efficient market also the IMC simulator time is artificial there is no expiry kind of thing here. For people struggling just try to find the price inefficiency and expolite it
+
+
+Analyze how voucher prices relate to the underlying price.
+Estimate the intrinsic value relationship max(S - K, 0).
+Identify patterns where market prices deviate significantly from intrinsic value.
+Suggest thresholds where buying or selling would be profitable.
+Analyze order book data:
+Identify cases where best bid/ask is far from fair value.
+Detect stale or mispriced orders.
+Suggest conditions for aggressive taker trades.
+Time Value emperically
+Estimate average premium (time value) added over intrinsic value.
+Group by strike price.
+Return a mapping like: strike average extra premium
+First rey understanding the data set just plot is somewhere happy trading
+A.R.I.A.APP
+—
+12:23 AM
+aphrim has been warned
+Reason: Bad word usage
+ABHI
+—
+12:23 AM
+Heyyy mannn, can someone tell me how to write better prompts for better outputs 
+Ribu
+—
+12:23 AM
+@ghost
+thank you
+omg
+jake_58
+—
+12:23 AM
+Sorry when do the options expire - I am confused
+alan [CMBC], 
+—
+12:23 AM
+check the best by date
+Aphrim
+—
+12:23 AM
+i hate codex
+Venio
+—
+12:23 AM
+bless up alpha has been acquired
+
+alan [CMBC], 
+—
+12:24 AM
+hooooly pnl
+MaxPNL
+—
+12:24 AM
+same
+Aphrim
+—
+12:24 AM
+it says I got 818k pnl on only day 0 and day 1
+
+but my backterester only got 630k across all 3 days
+alan [CMBC], 
+—
+12:24 AM
+Aphrim
+—
+12:24 AM
+codex is stupid
+alan [CMBC], 
+—
+12:24 AM
+
+Faduzzle
+—
+12:24 AM
+
+is my data capsule corrupt?
+why no trades near atm
+Ribu
+—
+12:25 AM
+yes
+iawa
+—
+12:25 AM
+uhhh what
+Ribu
+—
+12:25 AM
+its cooked
+integoverq
+—
+12:26 AM
+how can an llm help you if you dont tell it what to do lmao
+it is us who are smart or stupid lol
+Ribu
+—
+12:26 AM
+this right here
+is the true alpha!
+most people will not realise this.
+integoverq
+—
+12:27 AM
+those who getting 120-150k by llms,must telling it to do something
+alan [CMBC], 
+—
+12:27 AM
+"claude, tell yourself what to do as if you were a future IMC winner prompting claude (no mistakes)"
+glizzy god
+—
+12:27 AM
+yeah you need to tell it "make no mistakes"
+Ribu
+—
+12:27 AM
+mfw claude is actually smarter than you alan
+rmtf1111
+—
+12:28 AM
+this round is either the biggest scam in history
+Ribu
+—
+12:28 AM
+but i like to be hate trendy and in denial
+rmtf1111
+—
+12:28 AM
+or actually really hard
+Ribu
+—
+12:28 AM
+!
+glizzy god
+—
+12:28 AM
+why would it be easy
+Caster
+—
+12:28 AM
+just buy and hold
+stqrri
+—
+12:28 AM
+i forgot the actual sim will be on 3 days of data right
+rmtf1111
+—
+12:29 AM
+on 1 day
+stqrri
+—
+12:29 AM
+okay
+thanks
+Ribu
+—
+12:29 AM
+@glizzy god
+gaurang
+—
+12:29 AM
+Is getting 100k in this online test actually good? Like I think its just remembering as the online test is part of the day 2 data
+Ribu
+—
+12:29 AM
+how are you doing in backtests or in the leaderboard?
+gaurang
+—
+12:29 AM
+And will fail if given an independent time slice
+Lazarus Mission
+—
+12:29 AM
+call me crazy but what if IMC has throw a complete curve ball and we gotta use TECHNICAL ANALYSIS
+glizzy god
+—
+12:29 AM
+i have no alpha to be farmed
+Lazarus Mission
+—
+12:30 AM
+
+glizzy god
+—
+12:30 AM
+yeah we need to find the fair value gaps
+Faduzzle
+—
+12:30 AM
+dont leak alpha
+glizzy god
+—
+12:31 AM
+my bad twin
+Faduzzle
+—
+12:31 AM
+all good just don't do it again
+Smile
+—
+12:32 AM
+Twin mean
+hallwaybug
+—
+12:32 AM
+you're not a quant if you never did this
+rd3
+—
+12:32 AM
+is position limit still 80
+Smile
+—
+12:32 AM
+Round 3 still not check even wiki
+rd3
+—
+12:32 AM
+I just ask discord'
+Dew
+—
+12:33 AM
+Yeah in prompt u write "make no mistake only make billions"
+RcT
+—
+12:33 AM
+can i ask
+Dew
+—
+12:33 AM
+No dude
+RcT
+—
+12:33 AM
+wdym by "anchor" in trading
+i saw theres an 'anchor gap" in equirag
+glizzy god
+—
+12:33 AM
+you're not a quant if you never bought tjr mentorship for $3k
+integoverq
+—
+12:34 AM
+for prices x +/- ε, x
+hallwaybug
+—
+12:34 AM
+that's where jane streets gets there alpha from.
+
